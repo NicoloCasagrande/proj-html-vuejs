@@ -31,7 +31,7 @@ export default {
 
 <template>
   <div class="text-center white-bg">
-    <h3>FOODIE JOURNAL</h3>
+    <h3 class="py-3">FOODIE JOURNAL</h3>
     <div class="row">
       <div class="col-4" v-for="item in items">
         <img :src="item.image" :alt="item.title" />

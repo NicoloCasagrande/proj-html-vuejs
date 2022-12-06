@@ -11,16 +11,20 @@ export default {
 </script>
 
 <template>
-  <div>
-    <AppHero />
-    <div class="container relevant">
-      <SectionFoodieJournal class="" />
+  <main>
+    <div>
+      <AppHero />
+      <div class="container relevant">
+        <SectionFoodieJournal class="" />
+      </div>
     </div>
-  </div>
+  </main>
 </template>
-
 <style lang="scss" scoped>
+main {
+  background-color: var(--bg-background);
+}
 .relevant {
-  margin-top: -6.25rem;
+  margin-top: -4.375rem;
 }
 </style>
