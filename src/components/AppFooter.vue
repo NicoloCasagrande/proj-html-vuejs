@@ -1,5 +1,12 @@
 <script>
-export default {};
+import { store } from "../store";
+export default {
+  data() {
+    return {
+      store,
+    };
+  },
+};
 </script>
 
 <template>
@@ -19,12 +26,37 @@ export default {};
       </div>
     </div>
   </div>
-  <div id="bottom-footer"></div>
+  <div id="bottom-footer" class="container pt-4">
+    <div class="row">
+      <div class="col-3">
+        <img class="footer-logo" src="../assets/logo-mobile.png" alt="" />
+      </div>
+      <div class="col-3">
+        <nav>
+          <ul>
+            <li v-for="option in store.menuOption">{{ option }}</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-3">
+        <h6>CONTACT</h6>
+      </div>
+      <div class="col-3">
+        <h6>GET OUR APP!</h6>
+      </div>
+    </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
 img {
   width: 100%;
   object-fit: cover;
+}
+ul {
+  list-style: none;
+}
+#bottom-footer .footer-logo {
+  width: 70%;
 }
 </style>
