@@ -4,6 +4,7 @@ import SectionFoodieJournal from "./SectionFoodieJournal.vue";
 import SectionPopularRecipes from "./SectionPopularRecipes.vue";
 import SectionCulinaryCollection from "./SectionCulinaryCollection.vue";
 import SectionSubscribe from "./SectionSubscribe.vue";
+import SectionFarmToTable from "./SectionFarmToTable.vue";
 export default {
   name: "AppMain",
   components: {
@@ -12,6 +13,7 @@ export default {
     SectionPopularRecipes,
     SectionCulinaryCollection,
     SectionSubscribe,
+    SectionFarmToTable,
   },
 };
 </script>
@@ -26,8 +28,11 @@ export default {
       <div class="container text-center">
         <SectionPopularRecipes />
       </div>
-      <div class="container text-center mt-4">
+      <div class="container text-center my-4">
         <SectionCulinaryCollection />
+      </div>
+      <div class="container my-4">
+        <SectionFarmToTable />
       </div>
       <div class="text-center py-4 subscribe">
         <div class="container">
