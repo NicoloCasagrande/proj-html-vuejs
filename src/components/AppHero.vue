@@ -36,6 +36,7 @@ section {
     left: calc(50% - 60px);
     font-weight: 600;
     color: white;
+    font-family: "Roboto", sans-serif;
   }
 }
 </style>
