@@ -47,12 +47,6 @@ export default {};
 </template>
 
 <style lang="scss" scoped>
-button {
-  background-color: var(--secondary-color);
-  border: none;
-  color: white;
-  padding: 0.3125rem;
-}
 img {
   width: 100%;
 }

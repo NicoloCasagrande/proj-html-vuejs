@@ -42,8 +42,4 @@ export default {
   </div>
 </template>
 
-<style lang="scss" scoped>
-.white-bg {
-  background-color: white;
-}
-</style>
+<style lang="scss" scoped></style>
