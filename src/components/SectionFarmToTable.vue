@@ -1,11 +1,15 @@
 <script>
 import { store } from "../store";
+import AppSocialComp from "./AppSocialComp.vue";
 export default {
   name: "SectionFarmToTable",
   data() {
     return {
       store,
     };
+  },
+  components: {
+    AppSocialComp,
   },
 };
 </script>
@@ -46,9 +50,21 @@ export default {
       </div>
     </div>
     <div class="col-4">
-      <div class="col-12">
-        <img src="" alt="" />
+      <div class="col-12 position-relative" id="latest-recipes">
+        <img src="../assets/ad-bg.jpg" alt="" />
+        <h4 class="position-absolute">VIEW OUR LATEST RECIPES</h4>
       </div>
+      <div class="col-12 position-relative my-3" id="city">
+        <img src="../assets/singapore-featured-image.jpg" alt="" />
+        <h5 class="position-absolute">City Guide: Singapore</h5>
+        <button>
+          <i class="fa-solid fa-earth-europe"></i> VIEW ALL CITY GUIDES
+        </button>
+      </div>
+      <hr class="my-4" />
+      <input class="mb-3" type="text" placeholder="Search.." />
+      <h6>Follow us</h6>
+      <AppSocialComp />
     </div>
   </div>
 </template>
@@ -56,5 +72,35 @@ export default {
 <style lang="scss" scoped>
 .anteprima {
   width: 100%;
+}
+#latest-recipes {
+  text-align: center;
+  img {
+    width: 100%;
+  }
+  h4 {
+    top: 47%;
+    left: 25%;
+    width: 50%;
+  }
+}
+
+#city {
+  img {
+    width: 100%;
+  }
+  h5 {
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    top: 60%;
+    color: white;
+    padding: 0.625rem;
+  }
+  button {
+    width: 100%;
+  }
+}
+
+h6 {
+  color: var(--secondary-color);
 }
 </style>
