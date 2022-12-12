@@ -6,7 +6,18 @@ button {
   border: none;
   color: white;
   padding: 0.3125rem;
+  &:hover {
+    background-color: #ffb90f;
+    font-weight: bold;
+  }
 }
 section {
   padding: 3.125rem 0;
+}
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  &:hover {
+    color: var(--secondary-color);
+  }
 }

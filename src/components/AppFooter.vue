@@ -39,7 +39,9 @@ export default {
       <div class="col-3">
         <nav>
           <ul>
-            <li v-for="option in store.menuOption">{{ option }}</li>
+            <li v-for="option in store.menuOption">
+              <a href="">{{ option }}</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -58,7 +60,12 @@ export default {
       </div>
     </div>
   </div>
-  <div id="post-bottom-footer"></div>
+  <div id="post-bottom-footer" class="text-center">
+    <span
+      >@ copyright 2012-2020 | Avada Theme by ThemeFusion | All Rights Reserved
+      | Powered by WordPress</span
+    >
+  </div>
 </template>
 
 <style lang="scss" scoped>
@@ -77,5 +84,10 @@ h6 {
 }
 span {
   display: block;
+}
+#post-bottom-footer {
+  background-color: var(--bg-background);
+  padding: 0.9375rem 0;
+  color: var(--primary-color);
 }
 </style>
