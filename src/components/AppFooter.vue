@@ -52,8 +52,9 @@ export default {
         <span><i class="fa-solid fa-phone"></i>+ 0100-505-0000</span>
         <span><i class="fa-solid fa-envelope"></i>info@your-domain.com</span>
       </div>
-      <div class="col-3">
+      <div class="col-3 text-center">
         <h6>GET OUR APP!</h6>
+        <img src="../assets/app.png" alt="" />
       </div>
     </div>
   </div>
