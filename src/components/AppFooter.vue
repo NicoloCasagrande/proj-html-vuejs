@@ -43,14 +43,21 @@ export default {
           </ul>
         </nav>
       </div>
-      <div class="col-3">
+      <div class="col-3 flex-column">
         <h6>CONTACT</h6>
+        <span
+          ><i class="fa-sharp fa-solid fa-location-dot"></i> 775 New York
+          Ave,Brooklyn, Kings, New York 11203
+        </span>
+        <span><i class="fa-solid fa-phone"></i>+ 0100-505-0000</span>
+        <span><i class="fa-solid fa-envelope"></i>info@your-domain.com</span>
       </div>
       <div class="col-3">
         <h6>GET OUR APP!</h6>
       </div>
     </div>
   </div>
+  <div id="post-bottom-footer"></div>
 </template>
 
 <style lang="scss" scoped>
@@ -66,5 +73,8 @@ ul {
 }
 h6 {
   color: var(--secondary-color);
+}
+span {
+  display: block;
 }
 </style>

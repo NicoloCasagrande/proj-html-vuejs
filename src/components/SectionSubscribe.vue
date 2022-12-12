@@ -17,4 +17,8 @@ export default {};
   </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+div {
+  padding: 5rem 0;
+}
+</style>

@@ -53,7 +53,7 @@ export default {
     <div class="row">
       <div class="col-3" v-for="collect in collection">
         <div class="bg-white text-center">
-          <img :src="collect.image" alt="collect.name" />
+          <img :src="collect.image" :alt="collect.name" />
           <h6>{{ collect.name }}</h6>
         </div>
       </div>

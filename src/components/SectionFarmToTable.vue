@@ -1,5 +1,13 @@
 <script>
-export default {};
+import { store } from "../store";
+export default {
+  name: "SectionFarmToTable",
+  data() {
+    return {
+      store,
+    };
+  },
+};
 </script>
 
 <template>
@@ -14,8 +22,8 @@ export default {};
     </p>
   </div>
   <div class="row">
-    <div class="col-8 bg-white">
-      <div class="col-12">
+    <div class="col-8 row">
+      <div class="col-12 bg-white">
         <div>
           <img src="../assets/sfondo.jpg" alt="" class="anteprima" />
           <h4>Food Corner: Top Japanese Restaurant for Sushi</h4>
@@ -29,10 +37,19 @@ export default {};
           </p>
           <a href="">Read More ></a>
         </div>
-        <div></div>
+      </div>
+      <div class="col-6 my-3" v-for="(item, index) in store.items">
+        <div v-if="index <= 5">
+          <img :src="item.image" :alt="item.title" />
+          <span>By Admin | {{ item.date }}</span>
+        </div>
       </div>
     </div>
-    <div class="col-4"></div>
+    <div class="col-4">
+      <div class="col-12">
+        <img src="" alt="" />
+      </div>
+    </div>
   </div>
 </template>
 
