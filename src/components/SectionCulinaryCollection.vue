@@ -6,35 +6,35 @@ export default {
       collection: [
         {
           name: "DRINK",
-          image: "../assets/sfondo.jpg",
+          image: "src/assets/sfondo.jpg",
         },
         {
           name: "SOUPS",
-          image: "../assets/sfondo.jpg",
+          image: "src/assets/sfondo.jpg",
         },
         {
           name: "BAKERY",
-          image: "../assets/sfondo.jpg",
+          image: "src/assets/sfondo.jpg",
         },
         {
           name: "DINNER",
-          image: "../assets/sfondo.jpg",
+          image: "src/assets/sfondo.jpg",
         },
         {
           name: "HEALTHY",
-          image: "../assets/sfondo.jpg",
+          image: "src/assets/sfondo.jpg",
         },
         {
           name: "STAFF PICKS",
-          image: "../assets/sfondo.jpg",
+          image: "src/assets/sfondo.jpg",
         },
         {
           name: "APPETISERS",
-          image: "../assets/sfondo.jpg",
+          image: "src/assets/sfondo.jpg",
         },
         {
           name: "QUICK & EASY",
-          image: "../assets/sfondo.jpg",
+          image: "src/assets/sfondo.jpg",
         },
       ],
     };
