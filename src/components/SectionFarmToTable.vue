@@ -42,7 +42,7 @@ export default {
           <a href="">Read More ></a>
         </div>
       </div>
-      <div class="col-6 my-3" v-for="(item, index) in store.items">
+      <div class="col-6 my-3 ms-card" v-for="(item, index) in store.items">
         <div v-if="index <= 5">
           <img :src="item.image" :alt="item.title" />
           <span>By Admin | {{ item.date }}</span>
@@ -102,5 +102,11 @@ export default {
 
 h6 {
   color: var(--secondary-color);
+}
+
+.ms-card {
+  img {
+    width: 100%;
+  }
 }
 </style>
