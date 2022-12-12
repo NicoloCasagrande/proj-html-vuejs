@@ -17,5 +17,9 @@ export default {
 i {
   font-size: 0.8125rem;
   color: gray;
+  &:hover {
+    color: #ffb90f;
+    cursor: pointer;
+  }
 }
 </style>

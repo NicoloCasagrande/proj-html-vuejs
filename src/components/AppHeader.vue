@@ -53,4 +53,12 @@ ul {
   font-size: 0.75rem;
   padding: 3px;
 }
+#top-header {
+  span {
+    &:hover {
+      color: #ffb90f;
+      cursor: pointer;
+    }
+  }
+}
 </style>
