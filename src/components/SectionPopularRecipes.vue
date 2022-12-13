@@ -1,5 +1,13 @@
 <script>
-export default {};
+import { store } from "../store";
+export default {
+  name: "SectionPopularRecipes",
+  data() {
+    return {
+      store,
+    };
+  },
+};
 </script>
 
 <template>
@@ -23,23 +31,8 @@ export default {};
         <button>LEARN MORE</button>
       </div>
       <div class="col-6 d-flex flex-wrap justify-content-between">
-        <div class="ms-col-6">
-          <img src="../assets/sfondo.jpg" alt="" />
-        </div>
-        <div class="ms-col-6">
-          <img src="../assets/sfondo.jpg" alt="" />
-        </div>
-        <div class="ms-col-6">
-          <img src="../assets/sfondo.jpg" alt="" />
-        </div>
-        <div class="ms-col-6">
-          <img src="../assets/sfondo.jpg" alt="" />
-        </div>
-        <div class="ms-col-6">
-          <img src="../assets/sfondo.jpg" alt="" />
-        </div>
-        <div class="ms-col-6">
-          <img src="../assets/sfondo.jpg" alt="" />
+        <div class="ms-col-6" v-for="(recipe, index) in store.recipes">
+          <img :src="recipe.image" alt="" />
         </div>
       </div>
     </div>
