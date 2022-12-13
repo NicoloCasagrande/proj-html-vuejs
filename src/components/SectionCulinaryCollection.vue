@@ -6,35 +6,35 @@ export default {
       collection: [
         {
           name: "DRINK",
-          image: "src/assets/sfondo.jpg",
+          image: "src/assets/drinks-recipes.png",
         },
         {
           name: "SOUPS",
-          image: "src/assets/sfondo.jpg",
+          image: "src/assets/soups-recipes.png",
         },
         {
           name: "BAKERY",
-          image: "src/assets/sfondo.jpg",
+          image: "src/assets/baking-recipes.png",
         },
         {
           name: "DINNER",
-          image: "src/assets/sfondo.jpg",
+          image: "src/assets/dinner-recipes.png",
         },
         {
           name: "HEALTHY",
-          image: "src/assets/sfondo.jpg",
+          image: "src/assets/healthy-recipes.png",
         },
         {
           name: "STAFF PICKS",
-          image: "src/assets/sfondo.jpg",
+          image: "src/assets/staff-picks.png",
         },
         {
           name: "APPETISERS",
-          image: "src/assets/sfondo.jpg",
+          image: "src/assets/premium-recipes.png",
         },
         {
           name: "QUICK & EASY",
-          image: "src/assets/sfondo.jpg",
+          image: "src/assets/quick-easy-recipes.png",
         },
       ],
     };
@@ -52,7 +52,7 @@ export default {
     </p>
     <div class="row">
       <div class="col-3" v-for="collect in collection">
-        <div class="bg-white text-center">
+        <div class="bg-white text-center py-5 mb-4">
           <img :src="collect.image" :alt="collect.name" />
           <h6>{{ collect.name }}</h6>
         </div>

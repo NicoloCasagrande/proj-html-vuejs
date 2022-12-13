@@ -13,7 +13,7 @@ export default {
   <div class="text-center white-bg">
     <h3 class="py-3">FOODIE JOURNAL</h3>
     <div class="row">
-      <div class="col-4" v-for="(item, index) in store.items">
+      <div class="col-4 px-4" v-for="(item, index) in store.items">
         <div v-if="index <= 2">
           <img :src="item.image" :alt="item.title" />
           <h4>{{ item.title }}</h4>
