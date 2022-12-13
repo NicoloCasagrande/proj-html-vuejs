@@ -6,7 +6,7 @@ export default {
 
 <template>
   <section class="d-flex align-items-center justify-content-center">
-    <div class="title text-center py-3">
+    <div class="title text-center py-3 container-small">
       <h1>Food Corner: Top Japanese Restaurants for Sushi</h1>
       <span>March 25, 2019</span>
       <div>
@@ -37,6 +37,9 @@ section {
     font-weight: 600;
     color: white;
     font-family: "Roboto", sans-serif;
+  }
+  .container-small {
+    max-width: 59.375rem;
   }
 }
 </style>
