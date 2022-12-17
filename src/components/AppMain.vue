@@ -51,5 +51,6 @@ main {
 }
 .subscribe {
   background-image: url("../assets/subscribe-sec-bg.png");
+  background-size: cover;
 }
 </style>

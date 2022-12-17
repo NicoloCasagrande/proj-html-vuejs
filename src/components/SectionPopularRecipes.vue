@@ -18,20 +18,21 @@ export default {
       laudantium voluptate voluptas
     </p>
     <div class="row">
-      <div class="col-6 bg-white">
+      <div class="col-6 bg-white p-0">
         <img src="../assets/sfondo.jpg" alt="" />
-        <h5>Lunch Favourite with Salad, Naan And Beans</h5>
-        <span>Bakery. Featured, Healty, Latest Recipes, Staff Picks</span>
-        <p>
+        <h5 class="p-4">Lunch Favourite with Salad, Naan And Beans</h5>
+        <span class="p-4">Bakery. Featured, Healty, Latest Recipes, Staff Picks</span>
+        <hr>
+        <p class="p-4">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime culpa
           earum distinctio ea dolor, quisquam laborum quo itaque. Perspiciatis
           molestias possimus similique omnis deleniti sapiente repudiandae
           magnam sequi mollitia enim?
         </p>
-        <button>LEARN MORE</button>
+        <button class="m-4">LEARN MORE</button>
       </div>
       <div class="col-6 d-flex flex-wrap justify-content-between">
-        <div class="ms-col-6" v-for="(recipe, index) in store.recipes">
+        <div class="ms-col-6 mb-3" v-for="(recipe, index) in store.recipes">
           <img :src="recipe.image" alt="" />
         </div>
       </div>
@@ -44,7 +45,7 @@ img {
   width: 100%;
 }
 .ms-col-6 {
-  width: calc(50% - 15px);
+  width: calc(50% - 10px);
 }
 section .row {
   text-align: left;

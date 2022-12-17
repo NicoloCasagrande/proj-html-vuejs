@@ -16,7 +16,10 @@ export default {
 <template>
   <div id="top-footer">
     <div class="row">
-      <div class="col-3 px-0">
+      <div class="col-3 px-0" v-for="(item, index) in store.items">
+        <img :src="item.image" alt="" v-if="index <= 3"/>
+      </div>
+      <!-- <div class="col-3 px-0">
         <img src="../assets/sfondo.jpg" alt="" />
       </div>
       <div class="col-3 px-0">
@@ -24,10 +27,7 @@ export default {
       </div>
       <div class="col-3 px-0">
         <img src="../assets/sfondo.jpg" alt="" />
-      </div>
-      <div class="col-3 px-0">
-        <img src="../assets/sfondo.jpg" alt="" />
-      </div>
+      </div> -->
     </div>
   </div>
   <div id="bottom-footer" class="container pt-4">
@@ -51,8 +51,8 @@ export default {
           ><i class="fa-sharp fa-solid fa-location-dot"></i> 775 New York
           Ave,Brooklyn, Kings, New York 11203
         </span>
-        <span><i class="fa-solid fa-phone"></i>+ 0100-505-0000</span>
-        <span><i class="fa-solid fa-envelope"></i>info@your-domain.com</span>
+        <span><i class="fa-solid fa-phone"></i> + 0100-505-0000</span>
+        <span><i class="fa-solid fa-envelope"></i> info@your-domain.com</span>
       </div>
       <div class="col-3 text-center">
         <h6>GET OUR APP!</h6>

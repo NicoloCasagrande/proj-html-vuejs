@@ -11,8 +11,8 @@ export default {
 </script>
 
 <template>
-  <div>
-    <h3>CULINARY COLLECTION</h3>
+  <div class="text-center d-flex flex-column">
+    <h3 class="m-4">CULINARY COLLECTION</h3>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum
       animi, laborum error dicta dolores similique tenetur repellendus dolorum
@@ -32,5 +32,9 @@ export default {
 <style lang="scss" scoped>
 img {
   width: 3.125rem;
+}
+p{
+  width: 60%;
+  align-self: center;
 }
 </style>
